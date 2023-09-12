@@ -5,27 +5,27 @@ import javax.swing.JOptionPane;
 public class Arreglo {
     public static void main(String[] args) {
         
-        int tamano = 5;
+        int tamaño = 5;
 
       
-        int[] arreglo1 = new int[tamano];
-        int[] arreglo2 = new int[tamano];
-        int[] arregloResultado = new int[tamano];
+        int[] arreglo1 = new int[tamaño];
+        int[] arreglo2 = new int[tamaño];
+        int[] arregloResultado = new int[tamaño];
 
       
-        for (int i = 0; i < tamano; i++) {
+        for (int i = 0; i < tamaño; i++) {
             String input = JOptionPane.showInputDialog("Ingrese el elemento " + (i + 1) + " del primer arreglo:");
             arreglo1[i] = Integer.parseInt(input);
         }
 
     
-        for (int i = 0; i < tamano; i++) {
+        for (int i = 0; i < tamaño; i++) {
             String input = JOptionPane.showInputDialog("Ingrese el elemento " + (i + 1) + " del segundo arreglo:");
             arreglo2[i] = Integer.parseInt(input);
         }
 
       
-        for (int i = 0; i < tamano; i++) {
+        for (int i = 0; i < tamaño; i++) {
             arregloResultado[i] = arreglo1[i] + arreglo2[i];
         }
 
